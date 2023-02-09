@@ -222,7 +222,7 @@ ul {
   padding: 0;
 }
 .top-bar{
-  background: #000;
+  background: #232F55;
 }
 .top-bar-content {
   padding: 0px 121px;
@@ -237,7 +237,6 @@ ul {
   display: inline-block;
   font-size: 18px;
   line-height: 49px;
-  border-left: 1px solid #073D51;
   padding: 0 12px;
   color: #999ea3;
   -webkit-transition: all .3s ease;
@@ -264,6 +263,9 @@ ul {
     color: #FFF;
     line-height: 30px;
     margin-right: 0px;
+  }
+  .left-con ul li {
+    display: inherit;
   }
   .buttons .button-header {
     display: none;
