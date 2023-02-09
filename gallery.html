@@ -9,6 +9,7 @@
 <link rel="manifest" href="site.webmanifest">
 <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 <link rel="stylesheet" href="assets/css/slicknav.css">
@@ -109,26 +110,17 @@
 <section class="project-us pb-padding section-padding">
   <div class="container">
     <div class="row">
-      <article class='gallery'>
-        <a class='gallery-link' href='assets/img/gallery/8.webp'>
-          <figure class='gallery-image'>
-            <img height='1000' src='assets/img/gallery/8.webp' width='1000'>
-            <figcaption>Photo caption</figcaption>
-          </figure>
-        </a>
-        <a class='gallery-link' href='assets/img/gallery/9.webp'>
-          <figure class='gallery-image'>
-            <img height='1200' src='assets/img/gallery/9.webp' width='1600'>
-            <figcaption>Photo caption</figcaption>
-          </figure>
-        </a>
-        <a class='gallery-link' href='assets/img/gallery/10.webp'>
-          <figure class='gallery-image'>
-            <img height='1000' src='assets/img/gallery/10.webp' width='1000'>
-            <figcaption>Photo caption</figcaption>
-          </figure>
-        </a>
-      </article>
+      <div class="m-p-g">
+        <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
+          <img src="assets/img/gallery/8.webp" data-full="assets/img/gallery/8.webp" class="m-p-g__thumbs-img" />
+          <img src="assets/img/gallery/9.webp" data-full="assets/img/gallery/9.webp" class="m-p-g__thumbs-img" />
+          <img src="assets/img/gallery/10.webp" data-full="assets/img/gallery/10.webp" class="m-p-g__thumbs-img" />
+          <img src="assets/img/gallery/3.jpg" data-full="assets/img/gallery/3.jpg" class="m-p-g__thumbs-img" />
+          <img src="assets/img/gallery/4.jpg" data-full="assets/img/gallery/5.jpg" class="m-p-g__thumbs-img" />
+        </div>
+
+        <div class="m-p-g__fullscreen"></div>
+      </div>
     </div>
   </div>
 </section>
@@ -234,7 +226,13 @@
 
 <script src="./assets/js/plugins.js"></script>
 <script src="./assets/js/main.js"></script>
+<script>
+	var elem = document.querySelector('.m-p-g');
 
+	document.addEventListener('DOMContentLoaded', function() {
+		var gallery = new MaterialPhotoGallery(elem);
+	});
+</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -243,6 +241,7 @@
 
   gtag('config', 'UA-23581568-13');
 </script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/45226/material-photo-gallery.min.js'></script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"7963780f6a01f34b","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.11.3","si":100}' crossorigin="anonymous"></script>
 </body>
 </html>
