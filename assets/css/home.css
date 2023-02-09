@@ -253,7 +253,10 @@ ul {
   background-size: cover; */
   background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(35,47,85,1) 100%);
 }
-@media (min-width: 400px){
+.properties__caption {
+  padding: 5px 12px;
+}
+@media (max-width: 500px){
   .slider-padding {
     margin-bottom: 163px;
   }
@@ -484,4 +487,37 @@ ul {
 }
 .main-header.header-sticky {
   background: linear-gradient(90deg, rgba(16,59,66,1) 0%, rgba(255,255,255,1) 0%, rgba(3,189,227,1) 100%);
+}
+
+.glass-card {
+  z-index: 1;
+  top: 61px;
+  left: -2px;
+  margin: 0px 62px;
+  position: absolute;
+  border-radius: 5px;
+  background: transparent;
+  backdrop-filter: blur(5px);
+}
+.read-more a {
+  font-size: 14px;
+  padding: 4px 10px;
+  background: #9edae1;
+  border-radius: 5px;
+  color: #fff !important;
+  font-family: 'Heebo';
+  cursor: pointer;
+}
+.read-more {
+  margin: 10px 0px;
+}
+.about-sec::before{
+  content: "";
+  background-color: #bfcdf7;
+  height: 350px;
+  width: 200px;
+  z-index: 1;
+  right: 0;
+  position: absolute;
+  top: -180px;
 }
