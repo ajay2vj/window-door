@@ -69,7 +69,7 @@
 .home-slider.home-slider {
   z-index: 1;
   position: relative;
-  margin-top: 97px;
+  margin-top: 77px;
 }
 
 .home-slider.home-slider .btn-link {
@@ -98,7 +98,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   height: calc(100vh - 217px);
-  min-height: 700px;
+  min-height: 400px;
   position: relative;
 }
 
@@ -115,7 +115,7 @@
 .home-slider.home-slider .slider-item .slider-text {
   color: #fff;
   height: calc(100vh - 217px);
-  min-height: 700px;
+  min-height: 400px;
 }
 
 .home-slider.home-slider .slider-item .slider-text h1 {
@@ -124,7 +124,6 @@
   color: #fff;
   line-height: 1.2;
   font-weight: 500 !important;
-  text-transform: uppercase;
   margin-bottom: 30px;
 }
 
@@ -205,12 +204,12 @@
   .home-slider.home-slider {
     z-index: 1;
     position: relative;
-    margin-top: 0px;
+    margin-top: 90px;
   }
 }
 .left-con ul li a {
   display: inline-block;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 49px;
   padding: 0 0px;
   margin-right: 42px;
@@ -235,17 +234,35 @@ ul {
 }
 .right-con ul li a {
   display: inline-block;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 49px;
   padding: 0 12px;
   color: #999ea3;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
+.about-title {
+  padding-top: 90px;
+}
+.about-company {
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 1%, rgba(230,229,229,1) 19%, rgba(254,255,255,1) 100%);
+}
+.services-company {
+  /* background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/gallery/9.webp');
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(35,47,85,1) 100%);
+}
 @media (max-width: 575px){
+  .m-p-g__thumbs-img {
+    width: 315px !important;
+  }
+  .about-title {
+    padding-top: 20px;
+  }
   .right-con ul li a {
     display: inline-block;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 49px;
     padding: 0 3px;
     color: #999ea3;
@@ -259,7 +276,7 @@ ul {
   }
   .left-con ul li a {
     display: inline-block;
-    font-size: 13px;
+    font-size: 14px;
     color: #FFF;
     line-height: 30px;
     margin-right: 0px;
@@ -459,4 +476,7 @@ ul {
     min-width: 0;
     font-size: 14px;
   }
+}
+.main-header.header-sticky {
+  background: linear-gradient(90deg, rgba(16,59,66,1) 0%, rgba(255,255,255,1) 0%, rgba(3,189,227,1) 100%);
 }
