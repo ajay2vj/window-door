@@ -255,10 +255,10 @@ ul {
 }
 @media (max-width: 575px){
   .m-p-g__thumbs-img {
-    width: 315px !important;
+    width: -webkit-fill-available !important;
   }
   .about-title {
-    padding-top: 20px;
+    padding-top: 90px;
   }
   .right-con ul li a {
     display: inline-block;
