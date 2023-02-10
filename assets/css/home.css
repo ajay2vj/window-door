@@ -245,7 +245,10 @@ ul {
   padding-top: 90px;
 }
 .about-company {
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 1%, rgba(230,229,229,1) 19%, rgba(254,255,255,1) 100%);
+  /* background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 1%, rgba(230,229,229,1) 19%, rgba(254,255,255,1) 100%); */
+}
+.about-section-img img {
+  width: -webkit-fill-available;
 }
 .services-company {
   /* background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/gallery/9.webp');
