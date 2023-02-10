@@ -558,7 +558,7 @@ ul {
   position: relative;
   font-weight: 700;
   text-transform: uppercase;
-  color: #232F55;
+  color: #06bee3;
   cursor: pointer;
 }
 
@@ -582,4 +582,19 @@ ul {
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+}
+.about-shape {
+  padding-bottom: 30px;
+}
+.about-area {
+  padding-bottom: 70px;
+}
+.button-click{
+  margin-top: 30px;
+}
+.button-click a{
+  background: #06bee3;
+  padding: 17px;
+  cursor: pointer;
+  text-decoration: none;
 }

@@ -141,8 +141,16 @@ major2Carousel.owlCarousel({
     }
   }
 });
+// category
 
-
+$('.filter-controls li').on('click', function() {
+  $('.filter-controls li').removeClass('active');
+  $(this).addClass('active');
+});
+if($('.gallery__warp').length > 0 ) {
+  var containerEl = document.querySelector('.gallery__warp');
+  var mixer = mixitup(containerEl);
+}
 /* 4. MainSlider-1 */
     // h1-hero-active
     function mainSlider() {
