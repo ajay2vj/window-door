@@ -37,7 +37,9 @@
 .home-slider .owl-nav .owl-prev span:before,
 .home-slider .owl-nav .owl-next span:before {
   font-size: 40px;
+  font-weight: 900;
 }
+.ion-chevron-left:before{content:"<"}.ion-chevron-right:before{content:">"}
 
 .home-slider .owl-nav .owl-prev {
   left: 30px !important;
@@ -84,7 +86,7 @@
   transition: .3s all ease;
 }
 
-.home-slider.home-slider .owl-nav button {
+.home-slider.home-slider .owl-nav {
   color: #fff;
 }
 
@@ -201,6 +203,11 @@
   padding-right: 50px;
 }
 @media (max-width: 575px){
+  .home-slider.home-slider .owl-dots {
+    position: absolute;
+    bottom: 10px !important;
+    width: 100%;
+  }
   .home-slider.home-slider {
     z-index: 1;
     position: relative;
