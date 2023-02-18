@@ -742,3 +742,11 @@ ul {
   height: calc(100vh - 217px);
   min-height: 700px;
 }
+.products__img img {
+  width: -webkit-fill-available;
+}
+
+.products_caption {
+  background: #e2e2e263;
+  padding: 4px 5px;
+}
