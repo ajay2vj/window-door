@@ -950,7 +950,9 @@ li {
 .header-area .main-header ul > li:hover > ul.submenu {
 	visibility: visible;
 	opacity: 1;
-	top: 100%;
+	position: relative;
+	height: 154px;
+	top: -11px;
 }
 .header-transparent {
 	position: absolute;

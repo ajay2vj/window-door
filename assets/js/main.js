@@ -26,6 +26,12 @@
 
 	/* 3. slick Nav */
 	// mobile_menu
+	$(document).ready(function () {
+		$(".close-nav").click(function () {
+			$(".slicknav_nav").css("display", "none");
+		});
+	});
+
 	var menu = $("ul#navigation");
 	if (menu.length) {
 		menu.slicknav({

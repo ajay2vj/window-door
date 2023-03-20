@@ -12,6 +12,19 @@
 	top: 50%;
 	width: 100%;
 }
+.close-nav {
+	position: absolute;
+	top: 5px;
+	right: 7px;
+}
+.slicknav_nav li {
+	position: relative;
+	top: 52px;
+	padding: 4px 23px;
+}
+.mobile_nav {
+	display: none !important;
+}
 
 .home-slider .owl-nav .owl-prev,
 .home-slider .owl-nav .owl-next {
@@ -281,9 +294,7 @@ ul {
 .about-title {
 	padding-top: 90px;
 }
-.about-company {
-	/* background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 1%, rgba(230,229,229,1) 19%, rgba(254,255,255,1) 100%); */
-}
+
 .about-section-img img {
 	width: -webkit-fill-available;
 }
@@ -578,9 +589,6 @@ ul {
 		font-size: 14px;
 	}
 }
-.main-header.header-sticky {
-	/* background: linear-gradient(90deg, rgba(16,59,66,1) 0%, rgba(255,255,255,1) 0%, rgba(3,189,227,1) 100%); */
-}
 
 .glass-card {
 	z-index: 1;
@@ -812,4 +820,46 @@ ul {
 .card-body ul li {
 	list-style: square !important;
 	padding: 7px 0px;
+}
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav a:hover {
+	color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
 }
