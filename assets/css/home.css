@@ -40,6 +40,16 @@
 .home-slider .owl-nav .owl-next span:before {
 	font-size: 40px;
 	font-weight: 900;
+	position: relative;
+	top: -32px;
+	left: -8px;
+}
+.circle-nav {
+	width: 50px;
+	height: 50px;
+	padding: 25px 25px;
+	background: #3759cf;
+	border-radius: 50%;
 }
 .ion-chevron-left:before {
 	content: "<";
@@ -220,6 +230,17 @@
 		z-index: 1;
 		position: relative;
 		margin-top: 0px;
+	}
+	.home-slider.home-slider .slider-item {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		height: auto;
+		min-height: 200px;
+		position: relative;
+	}
+	.mobile-content {
+		display: none !important;
 	}
 }
 .left-con ul li a {
