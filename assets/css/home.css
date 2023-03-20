@@ -237,7 +237,7 @@ ul {
 	padding: 0;
 }
 .top-bar {
-	background: #000;
+	background: #232f55;
 }
 .top-bar-content {
 	padding: 0px 121px;
@@ -273,7 +273,7 @@ ul {
 	background: linear-gradient(
 		90deg,
 		rgba(255, 255, 255, 1) 0%,
-		rgba(35, 47, 85, 1) 100%
+		rgb(197 202 224) 100%
 	);
 }
 .properties__caption {
