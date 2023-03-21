@@ -950,9 +950,6 @@ li {
 .header-area .main-header ul > li:hover > ul.submenu {
 	visibility: visible;
 	opacity: 1;
-	position: relative;
-	height: 154px;
-	top: -11px;
 }
 .header-transparent {
 	position: absolute;
@@ -2528,6 +2525,9 @@ li {
 }
 .blog_item_img {
 	position: relative;
+}
+.blog_item_img img {
+	height: 242px !important;
 }
 .blog_item_img .blog_item_date {
 	position: absolute;

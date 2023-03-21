@@ -116,7 +116,11 @@
 	z-index: 1;
 	top: 0;
 	right: 0;
-	background: #1e41ad;
+	background: -webkit-linear-gradient(
+		90deg,
+		hsl(226deg 54% 20% / 95%) 0%,
+		hsl(234deg 71% 55% / 95%) 100%
+	);
 }
 .slicknav_nav ul {
 	margin: 0 0 0 20px;
