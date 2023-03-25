@@ -68,9 +68,9 @@
 	left: -8px;
 }
 .circle-nav {
-	width: 50px;
-	height: 50px;
-	padding: 25px 25px;
+	width: 20px;
+	height: 20px;
+	padding: 20px 20px;
 	background: #3759cf;
 	border-radius: 50%;
 }
@@ -111,7 +111,7 @@
 .home-slider.home-slider {
 	z-index: 1;
 	position: relative;
-	margin-top: 0px;
+	margin-top: 75px;
 }
 
 .home-slider.home-slider .btn-link {
@@ -141,7 +141,7 @@
 	background-repeat: no-repeat;
 	background-position: center center;
 	height: calc(100vh - 217px);
-	min-height: 600px;
+	min-height: 444px;
 	position: relative;
 }
 
@@ -244,6 +244,14 @@
 	padding-right: 50px;
 }
 @media (max-width: 575px) {
+	.header-transparent {
+		position: absolute;
+		right: 0;
+		left: 0;
+		z-index: 11;
+		background: transparent;
+		box-shadow: none;
+	}
 	.home-slider.home-slider .owl-dots {
 		position: absolute;
 		bottom: 10px !important;
@@ -406,7 +414,7 @@ ul {
 	-ms-transition: all 0.4s ease-out 0s;
 	-o-transition: all 0.4s ease-out 0s;
 	transition: all 0.4s ease-out 0s;
-	background: #fff;
+	background: #000;
 }
 .header-area
 	.main-header.header-sticky.sticky-bar
@@ -427,7 +435,7 @@ ul {
 	-ms-transition: all 0.4s ease-out 0s;
 	-o-transition: all 0.4s ease-out 0s;
 	transition: all 0.4s ease-out 0s;
-	background: #fff;
+	background: #000;
 }
 /* Gallery */
 
@@ -826,7 +834,7 @@ ul {
 .home-slider.home-slider .slider-item .slider-text {
 	color: #fff;
 	height: calc(100vh - 217px);
-	min-height: 700px;
+	min-height: 510px;
 }
 .products__img img {
 	height: 151px;
@@ -893,4 +901,138 @@ ul {
 	.sidenav a {
 		font-size: 18px;
 	}
+}
+
+.video-play-button {
+	position: absolute;
+	z-index: 10;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	box-sizing: content-box;
+	display: block;
+	width: 32px;
+	height: 44px;
+	/* background: #fa183d; */
+	border-radius: 50%;
+	padding: 18px 20px 18px 28px;
+}
+
+.video-play-button:before {
+	content: "";
+	position: absolute;
+	z-index: 0;
+	left: 44%;
+	top: 38%;
+	transform: translateX(-50%) translateY(-50%);
+	display: block;
+	width: 60px;
+	height: 60px;
+	background: #3660c1;
+	border-radius: 50%;
+	-webkit-animation: pulse-border 1500ms ease-out infinite;
+	animation: pulse-border 1500ms ease-out infinite;
+}
+
+.video-play-button:after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	left: 44%;
+	top: 38%;
+	transform: translateX(-50%) translateY(-50%);
+	display: block;
+	width: 60px;
+	height: 60px;
+	background: #193aa9;
+	border-radius: 50%;
+	transition: all 200ms;
+}
+
+.video-play-button:hover:after {
+	background-color: #193aa9;
+}
+
+.video-play-button img {
+	position: relative;
+	z-index: 3;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+
+.video-play-button span {
+	display: block;
+	position: relative;
+	z-index: 3;
+	width: 0;
+	height: 0;
+	border-left: 22px solid #fff;
+	border-top: 12px solid transparent;
+	border-bottom: 12px solid transparent;
+}
+
+@-webkit-keyframes pulse-border {
+	0% {
+		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+		opacity: 0;
+	}
+}
+
+@keyframes pulse-border {
+	0% {
+		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+		opacity: 0;
+	}
+}
+.video-overlay {
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.8);
+	opacity: 0;
+	transition: all ease 500ms;
+}
+
+.video-overlay.open {
+	position: fixed;
+	z-index: 1000;
+	opacity: 1;
+}
+
+.video-overlay-close {
+	position: absolute;
+	z-index: 1000;
+	top: 15px;
+	right: 20px;
+	font-size: 50px;
+	line-height: 1;
+	font-weight: 400;
+	color: #fff !important;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 200ms;
+}
+
+.video-overlay-close:hover {
+	color: #193aa9;
+}
+
+.video-overlay iframe {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
 }

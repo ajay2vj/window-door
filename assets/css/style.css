@@ -191,6 +191,7 @@ li {
 	position: fixed;
 	color: #fff;
 	font-size: 20px;
+	z-index: 1;
 	text-align: center;
 	border-radius: 50%;
 	line-height: 48px;
@@ -571,8 +572,8 @@ li {
 	color: #fff;
 }
 .border-btn2 {
-	border: 1px solid #fff;
-	color: #fff;
+	border: 1px solid #000;
+	color: #000;
 	font-family: "Acme", sans-serif;
 	background: none;
 	text-transform: normal;
@@ -611,7 +612,7 @@ li {
 .border-btn2 i {
 	font-size: 16px;
 	margin-right: 10px;
-	color: #fff;
+	color: #000;
 	-webkit-transition: all 0.3s ease-out 0s;
 	-moz-transition: all 0.3s ease-out 0s;
 	-ms-transition: all 0.3s ease-out 0s;
@@ -872,7 +873,7 @@ li {
 }
 .header-area .main-header .main-menu ul li a {
 	font-family: "Acme", sans-serif;
-	color: #fff;
+	color: #000;
 	font-weight: 500;
 	padding: 10px 5px;
 	display: block;
@@ -898,10 +899,10 @@ li {
 	-ms-transition: all 0.4s ease-out 0s;
 	-o-transition: all 0.4s ease-out 0s;
 	transition: all 0.4s ease-out 0s;
-	background: #fff;
+	background: #000;
 }
 .header-area .main-header .main-menu ul li:hover > a {
-	color: #fff;
+	color: #000;
 }
 .header-area .main-header .main-menu ul li:hover > a::after {
 	left: 0;
@@ -936,14 +937,14 @@ li {
 .header-area .main-header .main-menu ul ul.submenu > li > a {
 	padding: 6px 10px !important;
 	font-size: 16px;
-	color: #232f55;
+	color: #000;
 	text-transform: capitalize;
 }
 .header-area .main-header .main-menu ul ul.submenu > li > a::after {
 	position: unset;
 }
 .header-area .main-header .main-menu ul ul.submenu > li > a:hover {
-	color: #232f55;
+	color: #000;
 	background: none;
 	padding-left: 13px !important;
 }
@@ -955,7 +956,10 @@ li {
 	position: absolute;
 	right: 0;
 	left: 0;
-	z-index: 9;
+	z-index: 11;
+	background: #fff;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+		rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.header-sticky.sticky-bar {
@@ -3201,7 +3205,9 @@ li {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1333a4', endColorstr='#e4e9eb',GradientType=1 );
 }
 .header-sticky.sticky-bar {
-	background: #1333a4;
+	background: #fff;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+		rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffdfc', endColorstr='#1333a4',GradientType=1 );
 }
 .sample-text-area {
